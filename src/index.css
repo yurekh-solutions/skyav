@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Terracotta Earth Theme */
+    --background: 30 25% 96%;
+    --foreground: 20 30% 20%;
+
+    --card: 30 40% 98%;
+    --card-foreground: 20 30% 20%;
+
+    --popover: 30 40% 98%;
+    --popover-foreground: 20 30% 20%;
+
+    --primary: 15 65% 55%;
+    --primary-foreground: 30 25% 98%;
+
+    --secondary: 25 45% 85%;
+    --secondary-foreground: 20 30% 20%;
+
+    --muted: 30 30% 90%;
+    --muted-foreground: 20 20% 45%;
+
+    --accent: 10 70% 50%;
+    --accent-foreground: 30 25% 98%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 30% 85%;
+    --input: 25 30% 85%;
+    --ring: 15 65% 55%;
+
+    --radius: 1rem;
+    
+    --glass-bg: 30 40% 98% / 0.8;
+    --glass-border: 15 65% 55% / 0.2;
+    --gradient-terracotta: linear-gradient(135deg, hsl(15 65% 55%), hsl(25 70% 60%));
+    --gradient-earth: linear-gradient(135deg, hsl(30 50% 70%), hsl(20 60% 65%));
+    --gradient-glass: linear-gradient(135deg, hsl(30 40% 98% / 0.9), hsl(30 40% 98% / 0.6));
+    --shadow-glass: 0 8px 32px 0 hsl(15 65% 55% / 0.15);
+    --shadow-float: 0 10px 40px -10px hsl(15 65% 55% / 0.3);
+
+    --sidebar-background: 30 30% 95%;
+    --sidebar-foreground: 20 30% 25%;
+    --sidebar-primary: 15 65% 55%;
+    --sidebar-primary-foreground: 30 25% 98%;
+    --sidebar-accent: 25 40% 90%;
+    --sidebar-accent-foreground: 20 30% 25%;
+    --sidebar-border: 25 30% 85%;
+    --sidebar-ring: 15 65% 55%;
+  }
+
+  .dark {
+    /* Dark Terracotta Earth Theme */
+    --background: 20 25% 12%;
+    --foreground: 30 20% 95%;
+
+    --card: 20 25% 15%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 20 25% 15%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 15 65% 55%;
+    --primary-foreground: 30 25% 98%;
+
+    --secondary: 20 20% 22%;
+    --secondary-foreground: 30 20% 95%;
+
+    --muted: 20 20% 22%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 10 70% 50%;
+    --accent-foreground: 30 25% 98%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 20% 25%;
+    --input: 20 20% 25%;
+    --ring: 15 65% 55%;
+    
+    --glass-bg: 20 25% 15% / 0.8;
+    --glass-border: 15 65% 55% / 0.3;
+    --sidebar-background: 20 25% 12%;
+    --sidebar-foreground: 30 20% 90%;
+    --sidebar-primary: 15 65% 55%;
+    --sidebar-primary-foreground: 30 25% 98%;
+    --sidebar-accent: 20 20% 20%;
+    --sidebar-accent-foreground: 30 20% 90%;
+    --sidebar-border: 20 20% 25%;
+    --sidebar-ring: 15 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-xl bg-white/70 border border-white/20;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/80 border border-primary/20 shadow-lg;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-[#c97a5f] to-[#a0614a] bg-clip-text text-transparent;
+  }
+  
+  .terracotta-gradient {
+    background: linear-gradient(135deg, hsl(15 65% 55%), hsl(25 70% 60%));
+  }
+  
+  .earth-gradient {
+    background: linear-gradient(135deg, hsl(30 50% 70%), hsl(20 60% 65%));
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+  
+  .led-glow {
+    box-shadow: 0 0 20px rgba(212, 111, 72, 0.3), 0 0 40px rgba(212, 111, 72, 0.2);
+  }
+  
+  .led-glow-strong {
+    box-shadow: 0 0 30px rgba(212, 111, 72, 0.5), 0 0 60px rgba(212, 111, 72, 0.3), 0 0 90px rgba(212, 111, 72, 0.1);
+  }
+  
+  .neon-text {
+    text-shadow: 0 0 10px rgba(212, 111, 72, 0.8), 0 0 20px rgba(212, 111, 72, 0.6), 0 0 30px rgba(212, 111, 72, 0.4);
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(212, 111, 72, 0.3), 0 0 40px rgba(212, 111, 72, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(212, 111, 72, 0.5), 0 0 60px rgba(212, 111, 72, 0.4);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  .shimmer {
+    background: linear-gradient(90deg, transparent, rgba(212, 111, 72, 0.3), transparent);
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+  }
+}
