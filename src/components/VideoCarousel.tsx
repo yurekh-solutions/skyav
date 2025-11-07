@@ -140,23 +140,23 @@ const VideoCarousel = () => {
       </Helmet>
 
       <section 
-        className="py-20 px-4 bg-gradient-to-br from-red-50 via-orange-100 to-red-100"
+        className="py-12 md:py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-blue-100"
         aria-label="Video Gallery Section"
       >
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-7xl px-4">
           {/* Section Header */}
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#5a3a2a]">
+          <div className="text-center mb-8 md:mb-12 animate-fade-in px-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-gray-900">
               Watch Our Work
             </h2>
-            <p className="text-lg text-[#6b4a3a] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto">
               Experience our premium AV equipment in action - LED walls, displays, and professional setups for unforgettable events
             </p>
           </div>
 
           {/* Main Video Carousel */}
-          <div className="relative group">
-            <div className="glass-card rounded-3xl overflow-hidden bg-white/90 backdrop-blur-sm shadow-2xl">
+          <div className="relative group mb-6 md:mb-8">
+            <div className="rounded-2xl md:rounded-3xl overflow-hidden bg-white shadow-xl">
               {/* Video Player */}
               <div className="relative aspect-video bg-gradient-to-br from-[#d4b5a0] to-[#c9a88a]">
                 {isPlaying === currentVideo.id ? (
@@ -186,21 +186,21 @@ const VideoCarousel = () => {
                       className="absolute inset-0 flex items-center justify-center group/play"
                       aria-label={`Play ${currentVideo.title}`}
                     >
-                      <div className="w-20 h-20 rounded-full terracotta-gradient flex items-center justify-center shadow-2xl transform transition-all duration-300 group-hover/play:scale-110">
-                        <Play className="w-10 h-10 text-white ml-1" fill="white" />
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-2xl transform transition-all duration-300 group-hover/play:scale-110">
+                        <Play className="w-8 h-8 md:w-10 md:h-10 text-white ml-0.5 md:ml-1" fill="white" />
                       </div>
                     </button>
 
                     {/* Video Info Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <span className="inline-block px-3 py-1 bg-primary rounded-full text-sm font-semibold mb-2">
+                    <div className="absolute bottom-0 left-0 right-0 p-3 md:p-6 text-white bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                      <span className="inline-block px-2 py-0.5 md:px-3 md:py-1 bg-primary rounded-full text-xs md:text-sm font-semibold mb-1 md:mb-2">
                         {currentVideo.category}
                       </span>
-                      <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                      <h3 className="text-lg md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 drop-shadow-lg">
                         {currentVideo.title}
                       </h3>
-                      <p className="text-white/90 mb-2">{currentVideo.description}</p>
-                      <span className="text-sm text-white/80">Duration: {currentVideo.duration}</span>
+                      <p className="text-white/90 mb-1 md:mb-2 text-sm md:text-base line-clamp-2 hidden md:block">{currentVideo.description}</p>
+                      <span className="text-xs md:text-sm text-white/80">Duration: {currentVideo.duration}</span>
                     </div>
                   </>
                 )}
@@ -209,24 +209,24 @@ const VideoCarousel = () => {
               {/* Navigation Arrows */}
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110"
+                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center shadow-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110 z-10"
                 aria-label="Previous video"
               >
-                <ChevronLeft className="w-6 h-6 text-primary" />
+                <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-primary" />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110"
+                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white flex items-center justify-center shadow-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110 z-10"
                 aria-label="Next video"
               >
-                <ChevronRight className="w-6 h-6 text-primary" />
+                <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-primary" />
               </button>
             </div>
 
             {/* Autoplay Toggle */}
             <button
               onClick={() => setIsAutoPlay(!isAutoPlay)}
-              className="absolute top-4 right-4 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm flex items-center gap-2 shadow-lg hover:bg-white transition-all duration-300"
+              className="absolute top-2 right-2 md:top-4 md:right-4 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white flex items-center gap-2 shadow-lg hover:bg-white transition-all duration-300 text-sm md:text-base"
               aria-label={isAutoPlay ? "Pause autoplay" : "Enable autoplay"}
             >
               {isAutoPlay ? (
@@ -244,7 +244,7 @@ const VideoCarousel = () => {
           </div>
 
           {/* Thumbnail Navigation */}
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
             {videos.map((video, index) => (
               <button
                 key={video.id}
@@ -270,18 +270,18 @@ const VideoCarousel = () => {
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300">
                   <Play className="w-8 h-8 text-white" fill="white" />
                 </div>
-                <div className="absolute bottom-2 left-2 right-2">
-                  <p className="text-white text-sm font-semibold line-clamp-2">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-2 rounded-b-xl">
+                  <p className="text-white text-xs md:text-sm font-semibold line-clamp-1 md:line-clamp-2 drop-shadow-lg">
                     {video.title}
                   </p>
-                  <span className="text-white/80 text-xs">{video.duration}</span>
+                  <span className="text-white/90 text-xs drop-shadow-lg">{video.duration}</span>
                 </div>
               </button>
             ))}
           </div>
 
           {/* Progress Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
+          <div className="flex justify-center gap-2 mt-6 md:mt-8">
             {videos.map((_, index) => (
               <button
                 key={index}

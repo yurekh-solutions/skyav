@@ -75,13 +75,13 @@ const Contact = () => {
         </script>
       </Helmet>
       
-      <section id="contact" className="py-24 bg-gradient-to-br from-red-100 via-orange-100 to-red-200">
+      <section id="contact" className="py-12 md:py-20 lg:py-24 bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-10 md:mb-16 animate-fade-in px-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
             Get In <span className="text-gradient">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             Request a free quote or call us directly - we're here to help 24/7
           </p>
         </div>

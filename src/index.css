@@ -8,95 +8,95 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Terracotta Earth Theme */
-    --background: 30 25% 96%;
-    --foreground: 20 30% 20%;
+    /* Blue and White Theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 30 40% 98%;
-    --card-foreground: 20 30% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 30 40% 98%;
-    --popover-foreground: 20 30% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 15 65% 55%;
-    --primary-foreground: 30 25% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 45% 85%;
-    --secondary-foreground: 20 30% 20%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 30 30% 90%;
-    --muted-foreground: 20 20% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 10 70% 50%;
-    --accent-foreground: 30 25% 98%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 70% 50%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 25 30% 85%;
-    --input: 25 30% 85%;
-    --ring: 15 65% 55%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
 
     --radius: 1rem;
     
-    --glass-bg: 30 40% 98% / 0.8;
-    --glass-border: 15 65% 55% / 0.2;
-    --gradient-terracotta: linear-gradient(135deg, hsl(15 65% 55%), hsl(25 70% 60%));
-    --gradient-earth: linear-gradient(135deg, hsl(30 50% 70%), hsl(20 60% 65%));
-    --gradient-glass: linear-gradient(135deg, hsl(30 40% 98% / 0.9), hsl(30 40% 98% / 0.6));
-    --shadow-glass: 0 8px 32px 0 hsl(15 65% 55% / 0.15);
-    --shadow-float: 0 10px 40px -10px hsl(15 65% 55% / 0.3);
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 217 91% 60% / 0.2;
+    --gradient-blue: linear-gradient(135deg, hsl(217 91% 60%), hsl(210 100% 70%));
+    --gradient-light: linear-gradient(135deg, hsl(210 40% 98%), hsl(214 32% 95%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.6));
+    --shadow-glass: 0 8px 32px 0 hsl(217 91% 60% / 0.15);
+    --shadow-float: 0 10px 40px -10px hsl(217 91% 60% / 0.3);
 
-    --sidebar-background: 30 30% 95%;
-    --sidebar-foreground: 20 30% 25%;
-    --sidebar-primary: 15 65% 55%;
-    --sidebar-primary-foreground: 30 25% 98%;
-    --sidebar-accent: 25 40% 90%;
-    --sidebar-accent-foreground: 20 30% 25%;
-    --sidebar-border: 25 30% 85%;
-    --sidebar-ring: 15 65% 55%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .dark {
-    /* Dark Terracotta Earth Theme */
-    --background: 20 25% 12%;
-    --foreground: 30 20% 95%;
+    /* Dark Blue Theme */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
 
-    --card: 20 25% 15%;
-    --card-foreground: 30 20% 95%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 20 25% 15%;
-    --popover-foreground: 30 20% 95%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 15 65% 55%;
-    --primary-foreground: 30 25% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 20 20% 22%;
-    --secondary-foreground: 30 20% 95%;
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 20 20% 22%;
-    --muted-foreground: 30 15% 65%;
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 10 70% 50%;
-    --accent-foreground: 30 25% 98%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 60% 45%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 20 20% 25%;
-    --input: 20 20% 25%;
-    --ring: 15 65% 55%;
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 217 91% 60%;
     
-    --glass-bg: 20 25% 15% / 0.8;
-    --glass-border: 15 65% 55% / 0.3;
-    --sidebar-background: 20 25% 12%;
-    --sidebar-foreground: 30 20% 90%;
-    --sidebar-primary: 15 65% 55%;
-    --sidebar-primary-foreground: 30 25% 98%;
-    --sidebar-accent: 20 20% 20%;
-    --sidebar-accent-foreground: 30 20% 90%;
-    --sidebar-border: 20 20% 25%;
-    --sidebar-ring: 15 65% 55%;
+    --glass-bg: 222 47% 15% / 0.8;
+    --glass-border: 217 91% 60% / 0.3;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 19% 27%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 19% 27%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -124,15 +124,15 @@ All colors MUST be HSL.
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-primary via-[#c97a5f] to-[#a0614a] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-blue-500 to-blue-600 bg-clip-text text-transparent;
   }
   
-  .terracotta-gradient {
-    background: linear-gradient(135deg, hsl(15 65% 55%), hsl(25 70% 60%));
+  .blue-gradient {
+    background: linear-gradient(135deg, hsl(217 91% 60%), hsl(210 100% 70%));
   }
   
-  .earth-gradient {
-    background: linear-gradient(135deg, hsl(30 50% 70%), hsl(20 60% 65%));
+  .light-gradient {
+    background: linear-gradient(135deg, hsl(210 40% 98%), hsl(214 32% 95%));
   }
   
   .animate-float {

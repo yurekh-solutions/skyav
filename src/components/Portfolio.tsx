@@ -84,7 +84,7 @@ const Portfolio = () => {
         </script>
       </Helmet>
       
-      <section id="portfolio" className="py-24 bg-gradient-to-br from-red-50 via-orange-50 to-red-100">
+      <section id="portfolio" className="py-12 md:py-20 lg:py-24 bg-gradient-to-br from-white via-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-block mb-4">
@@ -116,7 +116,7 @@ const Portfolio = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {filteredItems.map((item, index) => (
             <article
               key={index}

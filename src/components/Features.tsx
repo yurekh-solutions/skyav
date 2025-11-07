@@ -66,29 +66,29 @@ const Features = () => {
         </script>
       </Helmet>
       
-      <section id="features" className="py-24 relative overflow-hidden" style={{ backgroundColor: '#fff6ef' }}>
+      <section id="features" className="py-12 md:py-20 lg:py-24 relative overflow-hidden bg-white">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-10 md:mb-16 animate-fade-in">
             <div className="inline-block mb-4">
               <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold border border-primary/20">
                 Why Choose Us
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#5a3a2a]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-gray-900">
               Why Sky Vision <span className="text-gradient">Multimedia?</span>
             </h2>
-            <p className="text-xl text-[#6b4a3a] max-w-2xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-gray-700 max-w-2xl mx-auto px-4">
               Quality equipment, reliable service, and affordable prices for all your event needs in Mumbai
             </p>
           </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
               <div
                 key={feature.title}
-                className="group relative bg-white rounded-2xl p-8 border border-orange-200 hover:border-primary transition-all duration-300 hover-lift shadow-lg"
+                className="group relative bg-white rounded-2xl p-8 border border-blue-100 hover:border-primary transition-all duration-300 hover-lift shadow-lg"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Icon with solid background */}
@@ -96,10 +96,10 @@ const Features = () => {
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-[#5a3a2a] mb-3">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-[#6b4a3a] leading-relaxed text-base">
+                <p className="text-gray-700 leading-relaxed text-base">
                   {feature.description}
                 </p>
               </div>
@@ -108,7 +108,7 @@ const Features = () => {
         </div>
 
         {/* Stats Bar */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {[
             { value: "5000+", label: "Events Completed" },
             { value: "1000+", label: "Happy Clients" },
@@ -117,13 +117,13 @@ const Features = () => {
           ].map((stat, index) => (
             <div
               key={stat.label}
-              className="text-center p-6 bg-white rounded-xl border border-orange-200 hover:border-primary transition-all duration-300 hover-lift shadow-lg"
+              className="text-center p-6 bg-white rounded-xl border border-blue-100 hover:border-primary transition-all duration-300 hover-lift shadow-lg"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.value}
               </div>
-              <div className="text-[#6b4a3a] font-medium">
+              <div className="text-gray-700 font-medium">
                 {stat.label}
               </div>
             </div>

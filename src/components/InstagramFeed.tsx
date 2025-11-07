@@ -23,7 +23,7 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-orange-100 via-red-100 to-orange-200">
+    <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/90 mb-4 shadow-lg">
@@ -41,27 +41,26 @@ const InstagramFeed = () => {
           {/* Instagram Profile Card */}
           <div className="glass-card rounded-2xl p-8 hover-lift bg-white/90 backdrop-blur-sm">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-20 h-20 rounded-full terracotta-gradient flex items-center justify-center shadow-lg">
-                <Instagram className="w-10 h-10 text-white" />
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                <Instagram className="w-8 h-8 md:w-10 md:h-10 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#5a3a2a]">@skyav.in</h3>
-                <p className="text-[#8b6a5a]">Creative Studio</p>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900">@skyav.in</h3>
+                <p className="text-gray-600 text-sm md:text-base">AV Equipment Rental</p>
               </div>
             </div>
             
-            <p className="text-[#6b4a3a] mb-6 leading-relaxed">
-              Discover our creative world through stunning visuals, project highlights, and daily inspiration. 
-              Join our community of design enthusiasts!
+            <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+              Follow us on Instagram for latest AV equipment setups, event highlights, and behind-the-scenes content from Mumbai's top events!
             </p>
             
             <a
               href="https://www.instagram.com/skyav.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 terracotta-gradient text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 text-sm md:text-base"
             >
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-4 h-4 md:w-5 md:h-5" />
               Follow on Instagram
             </a>
 

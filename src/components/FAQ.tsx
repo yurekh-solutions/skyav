@@ -69,7 +69,7 @@ const FAQ = () => {
         </script>
       </Helmet>
       
-      <section id="faq" className="py-24 bg-gradient-to-br from-orange-100 via-red-100 to-orange-200">
+      <section id="faq" className="py-12 md:py-20 lg:py-24 bg-gradient-to-br from-white via-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
            <div className="inline-block mb-4">

@@ -36,14 +36,14 @@ const About = () => {
         </script>
       </Helmet>
       
-      <section id="about" className="py-24 bg-gradient-to-br from-orange-100 via-red-100 to-orange-200">
+      <section id="about" className="py-12 md:py-20 lg:py-24 bg-gradient-to-br from-blue-50 via-white to-blue-100">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#5a3a2a]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-gray-900">
               Mumbai's Premier <span className="text-gradient">Event Technology Partner</span>
             </h2>
-            <p className="text-lg text-[#6b4a3a] mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6 leading-relaxed">
               For over 15 years, Sky Vision Multimedia has been the trusted name behind Mumbai's most spectacular events. From intimate corporate gatherings to grand concerts with thousands of attendees, we bring cutting-edge technology and flawless execution to every occasion.
             </p>
             <p className="text-lg text-[#6b4a3a] mb-6 leading-relaxed">
