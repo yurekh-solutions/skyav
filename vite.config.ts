@@ -17,13 +17,9 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     // Optimize for production
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console.logs in production
-        drop_debugger: true,
-      },
-    },
+   build: {
+    minify: "esbuild", // ✅ default, no need to install terser
+  },
     // Code splitting for better caching
     rollupOptions: {
       output: {
