@@ -126,9 +126,18 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 pt-8 text-center">
-          <p className="text-background/60">
-            © {currentYear} Sky Vision Multimedia. All Rights Reserved.
-          </p>
+         <p className="text-background/60">
+  © {currentYear} Sky Vision Multimedia. All Rights Reserved.{" "}
+  <a
+    href="https://www.yurekh.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className=" hover:text-primary transition-colors"
+  >
+    Developed by Yurekh Solutions
+  </a>
+</p>
+
           <p className="text-background/60 mt-2">
             Serving Mumbai | Navi Mumbai | Thane | Pune | Lonavala | Surat | Goa
           </p>
