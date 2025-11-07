@@ -99,7 +99,7 @@ const Services = () => {
         <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16 animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold border border-primary/20">
+            <span className="px-4 py-2 bg-white/60 backdrop-blur-md text-primary rounded-full text-sm font-semibold border border-white/40 shadow-lg">
               Premium Event Technology
             </span>
           </div>
@@ -109,6 +109,19 @@ const Services = () => {
           <p className="text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto px-4">
             Professional AV equipment rental for all types of events - weddings, corporate meetings, concerts, parties, and more
           </p>
+          
+          {/* Additional Info Cards */}
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-6">
+            <div className="bg-white/60 backdrop-blur-md px-3 md:px-4 py-2 rounded-full border border-white/40 shadow-lg">
+              <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Same Day Delivery</span>
+            </div>
+            <div className="bg-white/60 backdrop-blur-md px-3 md:px-4 py-2 rounded-full border border-white/40 shadow-lg">
+              <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Free Setup</span>
+            </div>
+            <div className="bg-white/60 backdrop-blur-md px-3 md:px-4 py-2 rounded-full border border-white/40 shadow-lg">
+              <span className="text-xs md:text-sm font-semibold text-gray-700">✓ Technical Support</span>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -117,7 +130,7 @@ const Services = () => {
             return (
               <div
                 key={service.title}
-                className="glass-card rounded-2xl overflow-hidden hover-lift group bg-white/90 backdrop-blur-sm shadow-lg"
+                className="bg-white/70 backdrop-blur-md rounded-2xl overflow-hidden hover-lift group shadow-xl border border-white/40 hover:border-primary/30 transition-all duration-300 hover:shadow-2xl"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative h-56 overflow-hidden">
@@ -134,7 +147,7 @@ const Services = () => {
                     </span>
                   </div>
                   <div className="absolute top-4 right-4">
-                    <div className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:rotate-12">
+                    <div className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center shadow-lg border border-white/40 transform transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
                   </div>
@@ -142,8 +155,8 @@ const Services = () => {
                     <h3 className="text-lg md:text-2xl font-bold text-white drop-shadow-lg">{service.title}</h3>
                   </div>
                 </div>
-                <div className="p-6 bg-gradient-to-br from-white to-blue-50">
-                  <p className="text-[#6b4a3a] leading-relaxed">
+                <div className="p-6 bg-white/80 backdrop-blur-sm">
+                  <p className="text-gray-700 leading-relaxed text-base">
                     {service.description}
                   </p>
                   <button className="mt-4 text-primary font-semibold hover:text-accent transition-colors duration-300 flex items-center gap-2 group/btn">

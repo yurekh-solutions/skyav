@@ -133,12 +133,14 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300" />
               </div>
-              <div className="absolute inset-0 flex flex-col justify-end p-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-                <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-white/90">{item.description}</p>
-                <span className="inline-block mt-3 px-3 py-1 bg-primary/80 rounded-full text-xs font-medium w-fit">
-                  {item.category}
-                </span>
+              <div className="absolute inset-0 flex flex-col justify-end p-4 md:p-6 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
+                <div className="bg-white/20 backdrop-blur-md rounded-xl p-4 border border-white/40">
+                  <span className="inline-block mb-2 px-3 py-1 bg-primary rounded-full text-xs font-semibold">
+                    {item.category}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm text-white/90">{item.description}</p>
+                </div>
               </div>
             </article>
           ))}

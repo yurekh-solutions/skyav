@@ -88,7 +88,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="glass-card rounded-2xl p-8 animate-fade-in">
+          <div className="bg-white/70 backdrop-blur-md rounded-2xl p-6 md:p-8 animate-fade-in border border-white/40 shadow-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Input

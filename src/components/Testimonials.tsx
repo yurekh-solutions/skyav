@@ -110,7 +110,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <article
               key={index}
-              className="glass-card rounded-2xl p-8 hover-lift relative"
+              className="bg-white/70 backdrop-blur-md rounded-2xl p-6 md:p-8 hover-lift relative border border-white/40 hover:border-primary/30 transition-all duration-300 shadow-xl hover:shadow-2xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <Quote className="absolute top-6 right-6 h-12 w-12 text-primary/20" />
@@ -142,23 +142,24 @@ const Testimonials = () => {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 glass-card rounded-2xl p-8 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <div className="text-4xl font-bold text-gradient mb-2">1000+</div>
-              <p className="text-sm text-muted-foreground">Happy Clients</p>
+        <div className="mt-12 md:mt-16 bg-white/70 backdrop-blur-md rounded-2xl p-6 md:p-8 text-center border border-white/40 shadow-xl">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Track Record</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">1000+</div>
+              <p className="text-xs md:text-sm text-gray-600 font-medium">Happy Clients</p>
             </div>
-            <div>
-              <div className="text-4xl font-bold text-gradient mb-2">5000+</div>
-              <p className="text-sm text-muted-foreground">Events Covered</p>
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5000+</div>
+              <p className="text-xs md:text-sm text-gray-600 font-medium">Events Covered</p>
             </div>
-            <div>
-              <div className="text-4xl font-bold text-gradient mb-2">4.9/5</div>
-              <p className="text-sm text-muted-foreground">Average Rating</p>
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4.9/5</div>
+              <p className="text-xs md:text-sm text-gray-600 font-medium">Average Rating</p>
             </div>
-            <div>
-              <div className="text-4xl font-bold text-gradient mb-2">100%</div>
-              <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/40">
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
+              <p className="text-xs md:text-sm text-gray-600 font-medium">Client Satisfaction</p>
             </div>
           </div>
         </div>

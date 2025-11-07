@@ -38,7 +38,7 @@ const Index = () => {
         keywords={pageSEO.home.keywords}
       />
       <GoogleAnalytics enabled={false} />
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-20 md:pb-0">
         <Header />
         <main>
           <Hero />

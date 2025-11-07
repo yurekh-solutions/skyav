@@ -90,7 +90,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <article
               key={index}
-              className="glass-card rounded-2xl overflow-hidden transition-all duration-300"
+              className="bg-white/70 backdrop-blur-md rounded-2xl overflow-hidden transition-all duration-300 border border-white/40 hover:border-primary/30 shadow-lg hover:shadow-xl"
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <button
